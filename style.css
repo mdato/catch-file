@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;600&family=Syncopate:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: coral;
+  
+}
+
+.titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: -70px;
+  font-size: 35px;
+  font-family: 'Syncopate', sans-serif;
+}
+
+img,
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+video {
+  display: none;
+}
+
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  height: 95vh;
+  font-family: 'Cookie', cursive;
+}
+
+.pickers,
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.pickers {
+  height: 30vh;
+  justify-content: space-evenly;
+  gap: .5rem;
+}
+
+.pickers button {
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #2e5fa3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.pickers button span {
+  vertical-align: middle;
+}
+
+.pickers button:hover {
+  background-color: #3e4f9c;
+}
+
+.content {
+  margin-top: -50px;
+  height: 70vh;
+  flex-direction: column;
+  background-color: rgba(229, 140, 108, 0.671);
+}
+
+.content h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  word-wrap: normal;
+  background-color: rgba(229, 140, 108, 0.671);
+  font-weight: 300;
+}
+
+.content p {
+  font-size: 1.5rem;
+  word-wrap: normal;
+  overflow-y: auto;
+  background-color: rgba(229, 140, 108, 0.671);
+  padding-left: 50px;
+}
+
+@media (max-width: 479px) {
+  .pickers button {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .content p {
+    font-size: .7rem;
+    word-wrap: normal;
+  }
+  .content h2 {
+    font-size: 1rem;
+  }
+  .titulo{
+       font-size: 20px;
+       margin-top: 15px;
+       margin-bottom: -20px;
+  }
+  .content {
+    margin-top: -20px;
+  }
+}
